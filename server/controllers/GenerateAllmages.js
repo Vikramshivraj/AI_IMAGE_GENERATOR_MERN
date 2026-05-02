@@ -30,7 +30,7 @@ export const generateImage = async (req, res) => {
     }
 
     return res.status(200).json({
-      photo: imageUrl, // 👈 IMPORTANT (URL, not base64)
+      photo: imageUrl, 
     });
 
   } catch (error) {

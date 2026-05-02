@@ -21,7 +21,6 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Server is running" });
 });
 
-// DB connection
 const connectDB = async () => {
   try {
     mongoose.set("strictQuery", true);
