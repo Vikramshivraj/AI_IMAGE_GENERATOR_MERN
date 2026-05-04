@@ -91,7 +91,7 @@ const Home = () => {
     };
     useEffect(()=>{
       getPosts();
-    },[]);
+    },[getPosts]);
     useEffect(()=>{
       if(!search){
         setFilteredPosts(posts);
